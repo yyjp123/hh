@@ -1,0 +1,68 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1538206213197" stop="1538206213237">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1538206213197" status="passed" stop="1538206213197">
+      <name>Test01.test01</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9512-MainThread"/>
+        <label name="host" value="Lenovo-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538206213197" status="passed" stop="1538206213197">
+          <name>1被执行</name>
+          <title>1被执行</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538206213197" status="failed" stop="1538206213237">
+      <name>Test01.test02</name>
+      <failure>
+        <message>TypeError: attach() missing 1 required positional argument: 'contents'</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x0000006425741320&gt;
+
+    @allure.step("2被执行")
+    
+    def test02(self):
+&gt;       allure.attach("")
+E       TypeError: attach() missing 1 required positional argument: 'contents'
+
+scripts\test01.py:12: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9512-MainThread"/>
+        <label name="host" value="Lenovo-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538206213197" status="failed" stop="1538206213197">
+          <name>2被执行</name>
+          <title>2被执行</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538206213237" status="passed" stop="1538206213237">
+      <name>Test01.test03</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="9512-MainThread"/>
+        <label name="host" value="Lenovo-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
